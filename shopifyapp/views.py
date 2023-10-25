@@ -35,10 +35,10 @@ def oauth_callback(request):
         access_token = response.json().get('access_token')
         request.session['shopify_access_token'] = access_token
         messages.success(request, 'Authentication successful.')
-        return redirect('product_list')
+        return redirect('get-blogs')
     else:
         messages.error(request, 'Authentication failed.')
-        return redirect('product_list')
+        return redirect('get-blogs')
 
 
 def fetch_shopify_data(request):

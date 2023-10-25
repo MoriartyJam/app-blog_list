@@ -8,7 +8,7 @@ The app requests access to the store and after the client confirms it, takes the
 
 3.How to Install and Run the Project
 
-Go to {url_app}/shopify/oauth/callback/ which will automatically take you to the app install request confirmation page.
+Go to {url_app}/install which will automatically take you to the app install request confirmation page.
 Once confirmed by the customer, the app takes the data from shopify, displays it on the get-blogs page and publishes it 
 in the custom section of the store. 
 

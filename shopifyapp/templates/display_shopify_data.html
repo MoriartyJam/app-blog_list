@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopify Data</title>
+</head>
+<body>
+    <h1>Shopify Blogs</h1>
+    <ul>
+        {% for blog in blogs %}
+            <li>{{ blog.title }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Shopify Articles</h1>
+    <ul>
+        {% for article in articles %}
+            <li>{{ article.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

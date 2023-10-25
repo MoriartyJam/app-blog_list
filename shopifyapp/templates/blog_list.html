@@ -1,0 +1,11 @@
+<ul>
+{% for blog in blogs %}
+    <li>{{ blog.title }}</li>
+    <ul>
+    {% for article in blog.shopifyarticle_set.all %}
+        <li>{{ article.title }}</li>
+        <p>{{ article.body_html | safe }}</p>
+    {% endfor %}
+    </ul>
+{% endfor %}
+</ul>

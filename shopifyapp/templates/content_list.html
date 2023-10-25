@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopify Content</title>
+</head>
+<body>
+    <h1>Shopify Blogs and Articles</h1>
+
+    <ul>
+        {% for data in articles_data %}
+            <li>
+                <h2>{{ data.blog.title }}</h2>
+                <div>{{ data.blog.description }}</div>
+                <ul>
+                    {% for article in data.articles %}
+                        <li>
+                            <h3>{{ article.title }}</h3>
+                            <div>{{ article.body_html|safe }}</div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

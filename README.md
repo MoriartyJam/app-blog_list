@@ -1,6 +1,6 @@
 1.Project's Title
 
-An app that posts all blogs and their articles in one custom section. 
+An private app that posts all blogs and their articles in one custom section. 
 
 2.Project Description
 

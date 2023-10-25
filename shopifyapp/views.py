@@ -38,7 +38,7 @@ def oauth_callback(request):
         return redirect('get-blogs')
     else:
         messages.error(request, 'Authentication failed.')
-        return redirect('get-blogs')
+        return redirect('install')
 
 
 def fetch_shopify_data(request):
